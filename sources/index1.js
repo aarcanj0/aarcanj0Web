@@ -18,3 +18,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+function typeWriter(element, text, i = 0) {
+    if (i < text.length) {
+        element.innerHTML = text.substring(0, i + 1) + '<span class="blinking-cursor">|</span>';
+        setTimeout(() => typeWriter(element, text, i + 1), 100);
+    } else {
+        setInterval(() => {
+            const cursor = document.querySelector('.blinking-cursor');
+            cursor.style.visibility = cursor.style.visibility === 'hidden' ? 'visible' : 'hidden';
+        }, 500);
+    }
+}
+
+const title = document.querySelector('.material-design');
+if (title) {
+    const text = title.textContent.replace('|', '');
+    title.textContent = '';
+    typeWriter(title, text);
+}
