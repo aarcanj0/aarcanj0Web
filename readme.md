@@ -1,4 +1,4 @@
-# Portfólio Pessoal - Guilherme Araújo
+# Website
 
 Este é um projeto de portfólio pessoal desenvolvido com HTML, CSS e JavaScript utilizando Material Design 3.
 
