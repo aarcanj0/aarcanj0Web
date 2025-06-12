@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const switchEl = document.querySelector('md-switch');
     const body = document.body;
-    // Check localStorage for dark mode preference
     const darkMode = localStorage.getItem('darkMode') === 'true';
     if (darkMode) {
         body.classList.add('dark-mode');

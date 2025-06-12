@@ -79,10 +79,21 @@ body.dark-mode {
     width: 92%;
     max-width: 1800px;
     min-height: 70vh;
-    margin: 40px auto;
+    margin: 200px auto;
     display: flex;
     gap: 25px;
     align-items: stretch;
+    text-align: center;
+    justify-content: center;
+}
+
+.content-area-wrapper img {
+    width: 50%;
+    height: auto;
+    border-radius: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-card {
